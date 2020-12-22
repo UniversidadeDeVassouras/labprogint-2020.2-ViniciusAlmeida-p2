@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 * {
     font-family: 'Roboto';
-    margin: auto;
+    margin: 0px;
     color: #888;
 }
 
@@ -14,7 +14,7 @@
     padding-top: 70px;
     height: 400px;
     background-color: #707070;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
 }
 
 #header-1 {
@@ -55,7 +55,7 @@
     margin-left: 30px;
     margin-right: 30px;
     font-size: 15px;
-    width: 600px;
+    width: 520px;
 }
 
 #form-inscricao {
@@ -63,7 +63,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 300px;
-    width: 400px;
+    width: 340px;
     margin-right: 30px;
     margin-left: 30px;
 }
@@ -72,8 +72,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 50px;
-    width: 350px;
+    height: 40px;
+    width: 340px;
 }
 
 .form-inscricao-campos>input:invalid {
@@ -97,7 +97,7 @@ input {
     border: 1px solid #707070;
     border-radius: 4px;
     padding: 10px 0;
-    background-color: white;
+    background-color: var(--titulo-principal);
 }
 
 .sessao-produtos {
@@ -115,7 +115,7 @@ input {
     text-align: center;
     align-self: center;
     grid-gap: 20px;
-    width: 1060px;
+    width: 930px;
     margin-bottom: 50px;
     font-size: 18px;
     font-weight: bold;
@@ -125,4 +125,133 @@ input {
 #sessao-produtos-titulo:after {
     content: '';
     border-top: 2px solid #707070;
+}
+
+.produtos {
+    display: flex;
+    max-width: 920px;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-bottom: 50px;
+    flex-flow: row wrap;
+}
+
+.card-produto {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.imagem-produto {
+    border: 1px solid #707070;
+    height: 150px;
+    margin-bottom: 14px;
+}
+
+.nome-produto {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.descricao-produto {
+    font-size: 12px;
+    height: 60px;
+}
+
+.preco-antigo-produto {
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.preco-novo-produto {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.divisao-produto {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.botao-produto {
+    font-size: 16px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    padding: 5px 0;
+    background-color: var(--titulo-principal);
+}
+
+.mais-noticias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.sessao-mais-noticias {
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    grid-gap: 20px;
+    width: 930px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sessao-mais-noticias:before,
+.sessao-mais-noticias:after {
+    content: '';
+    border-top: 2px solid #707070;
+}
+
+.mais-noticias>h3 {
+    padding-bottom: 40px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+#compartilhar-formulario {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.compartilhar-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50px;
+    width: 340px;
+}
+
+#compartilhar-formulario .compartilhar-form {
+    margin: 0 20px 0 20px;
+}
+
+.botao-compartilhar {
+    font-size: 16px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    padding: 10px 0;
+    background-color: var(--titulo-principal);
+}
+
+.mais-noticias .botao-compartilhar {
+    width: 260px;
+}
+
+.footer-projeto {
+    text-align: center;
+    font-size: 12px;
+    padding: 150px 0 85px 0;
+    background-color: #707070;
+    clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 100%);
+}
+
+#footer-descricao {
+    color: var(--titulo-principal);
 }
