@@ -9,12 +9,21 @@
     --titulo-principal: white;
 }
 
+.header-background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 400px;
+    width: 100%;
+    background-color: #707070;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    z-index: -1;
+}
+
 .header-principal {
     text-align: center;
-    padding-top: 70px;
+    margin-top: 20px;
     height: 400px;
-    background-color: #707070;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
 }
 
 #header-1 {
@@ -254,4 +263,44 @@ input {
 
 #footer-descricao {
     color: var(--titulo-principal);
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        display: block;
+    }
+    #descricao-main {
+        text-align: center;
+        width: auto;
+    }
+    #form-inscricao {
+        margin-top: 30px;
+        width: auto;
+    }
+    .form-inscricao-campos {
+        width: auto;
+    }
+    #sessao-produtos-titulo {
+        width: 700px;
+    }
+    .produtos {
+        display: block;
+    }
+    .card-produto {
+        width: auto;
+        flex-direction: row;
+    }
+    .imagem-produto {
+        height: 200px;
+        margin-right: 15px;
+    }
+    .botao-produto {
+        width: 50%;
+    }
+    .sessao-mais-noticias {
+        width: 700px;
+    }
+    #compartilhar-formulario {
+        display: block;
+    }
 }

@@ -11,6 +11,7 @@
 <body>
 
     <header class="header-principal">
+        <span class="header-background"></span>
         <p id="header-1">uma seleção de produtos</p>
         <p id="header-2">especial para você</p>
         <p id="header-3">Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
@@ -58,12 +59,14 @@
             {%for produtos in listar_produtos%}
             <div class="card-produto">
                 <img class="imagem-produto" src='http:{{produtos.get_imagem_produto()}}'>
-                <p class="nome-produto">{{produtos.get_nome_produto()}}</p>
-                <p class="descricao-produto">{{produtos.get_descricao_produto()}}</p>
-                <p class="preco-antigo-produto">De: {{produtos.get_preco_antigo()}}</p>
-                <p class="preco-novo-produto">Por: {{produtos.get_preco_novo()}}</p>
-                <p class="divisao-produto">ou {{produtos.get_qtd_parcela_produto()}}x de {{produtos.get_valor_parcela_produto()}}r$</p>
-                <button class="botao-produto">Comprar</button>
+                <div id="responsive">
+                    <p class="nome-produto">{{produtos.get_nome_produto()}}</p>
+                    <p class="descricao-produto">{{produtos.get_descricao_produto()}}</p>
+                    <p class="preco-antigo-produto">De: {{produtos.get_preco_antigo()}}</p>
+                    <p class="preco-novo-produto">Por: {{produtos.get_preco_novo()}}</p>
+                    <p class="divisao-produto">ou {{produtos.get_qtd_parcela_produto()}}x de {{produtos.get_valor_parcela_produto()}}r$</p>
+                    <button class="botao-produto">Comprar</button>
+                </div>
             </div>
             {%endfor%}
         </div>
